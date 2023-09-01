@@ -1,0 +1,473 @@
+
+
+:root {
+    /* --main-color:#ffbe33;
+    --main-color-hover:#e69c00;
+    --color-white: white;
+    --color-dark: #222831; */
+    --transition-time: 0.5s;
+}
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+    scroll-padding-top: 50px;
+}
+
+h1 ,h2 ,h3, h4, h5, h6, .font-header {
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+h1 ,h2 {
+    font-weight: bolder;
+}
+
+.main-button {
+    padding-inline: 2rem;
+    padding-block: .5rem;
+    background-color: white;
+    transition: background-color var(--transition-time);
+}
+.main-button:hover {
+    background-color: var(--main-color-hover);
+}
+
+
+/* header */
+.navbar-toggler {
+    padding: var(--bs-navbar-toggler-padding-y) var(--bs-navbar-toggler-padding-x);
+    font-size: var(--bs-navbar-toggler-font-size);
+    line-height: 1;
+    color: transparent;
+    background-color: transparent;
+    border: none;
+    border-radius:none;
+    transition: var(--bs-navbar-toggler-transition);
+}
+.header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.644) , rgba(0, 0, 0, 0.644)) , url("../Images/bg.jpg");
+    background-position: top center;
+    background-size: cover;
+}
+
+.header-move::after {
+    content: "|";
+    animation: header-moveing alternate 5s infinite;
+}
+
+@keyframes header-moveing {
+    0% {
+        content: "|";
+      }
+      3% {
+        content: "L|";
+      }
+      5% {
+        content: "La|";
+      }
+      7% {
+        content: "Lar|";
+      }
+      10% {
+        content: "Larr|";
+      }
+      13% {
+        content: "Larry|";
+      }
+      15% {
+        content: "Larry |";
+      }
+      17% {
+        content: "Larry D|";
+      }
+      20% {
+        content: "Larry Da|";
+      }
+      24% {
+        content: "Larry Dan|";
+      }
+      25% {
+        content: "Larry Dani|";
+      }
+      27% {
+        content: "Larry Daniels|";
+      }
+      30% {
+        content: "Larry Daniels|";
+      }
+      32% {
+        content: "Larry Danie|";
+      }
+      35% {
+        content: "Larry Dani|";
+      }
+      37% {
+        content: "Larry Dan|";
+      }
+      40% {
+        content: "Larry Da|";
+      }
+      42% {
+        content: "Larry D|";
+      }
+      45% {
+        content: "Larry |";
+      }
+      47% {
+        content: "Larry|";
+      }
+      50% {
+        content: "De|";
+      }
+      52% {
+        content: "Des|";
+      }
+      55% {
+        content: "Desi|";
+      }
+      57% {
+        content: "Desig|";
+      }
+      60% {
+        content: "Design|";
+      }
+      62% {
+        content: "Designe|";
+      }
+      65% {
+        content: "Designer|";
+      }
+      67% {
+        content: "Designer|";
+      }
+      70% {
+        content: "Designe|";
+      }
+      72% {
+        content: "Design|";
+      }
+      75% {
+        content: "Desig|";
+      }
+      77% {
+        content: "Desi|";
+      }
+      80% {
+        content: "Des|";
+      }
+      82% {
+        content: "De|";
+      }
+      85% {
+        content: "Dev|";
+      }
+      87% {
+        content: "Deve|";
+      }
+      90% {
+        content: "Devel|";
+      }
+      92% {
+        content: "Develo|";
+      }
+      95% {
+        content: "Develop|";
+      }
+      97% {
+        content: "Develope|";
+      }
+      100% {
+        content: "Developer|";
+      }
+
+}
+
+.header-icon {
+    width: 30px;
+    height: 30px;
+}
+.header-icon a i {
+font-size: 13px;
+}
+
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+    color: var(--bs-navbar-active-color);
+}
+
+.navbar-nav .nav-link.active::after {
+    height: 2px;
+}
+
+.nav-link {
+    color: var(--bs-navbar-active-color);
+    text-align: center;
+    position: relative;
+    margin-inline: 5px;
+}
+
+.nav-item .nav-link::after {
+    content: "";
+    position: absolute;
+    height: 0px;
+    width: 70%;
+    background-color: black;
+    bottom: 0;
+    left: 15%;
+}
+
+/* End - header */
+
+
+/*  About */
+.about-btn button {
+    font-size: 12px;
+}
+
+.btn-style {
+    color: white;
+    background-color: black;
+    transition: background-color var(--transition-time) , color var(--transition-time);
+}
+
+.btn-style:hover {
+    color: black;
+    background-color: white;
+    border-color: black;
+
+}
+
+/* End - About */
+/* Services */
+.section-head {
+    display: inline;
+    border-bottom: 2px dotted rgb(218, 218, 218);
+}
+
+.w-h-round {
+    width: 75px;
+    height: 75px;
+    background-color: #f4f4f4;
+    border-radius: 50%;
+}
+
+.fs-14 {
+    font-size: 14px;
+}
+
+.services .inner .w-h-round  , .contactus .item .w-h-round {
+    transition: background-color var(--transition-time);
+}
+
+.services .inner .w-h-round i , .contactus .item .w-h-round i{
+    transition: color var(--transition-time);
+
+}
+
+.services .inner:hover .w-h-round , .contactus .item:hover .w-h-round{
+    background-color: black;
+}
+
+.services .inner:hover .w-h-round i , .contactus .item:hover .w-h-round{
+    color: white;
+}
+/* End - Services */
+/* Portfolio */
+.Portfolio-layer {
+    position: absolute;
+    top: 40px;
+    bottom: 5px;
+    left: 5px;
+    right: 5px;
+    background-color: white;
+    opacity: 0;
+    transition: top var(--transition-time) , opacity var(--transition-time);
+}
+
+.w-h-round-s {
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    background-color: black;
+    transition: background-color var(--transition-time),border var(--transition-time);
+}
+
+.w-h-round-s:hover {
+    background-color: white;
+    border: 1px solid black;
+}
+
+.w-h-round-s:hover i {
+    color: black;
+}
+
+.w-h-round-s i {
+    color: white;
+    transition: color var(--transition-time);
+}
+
+.Portfolio .inner:hover .Portfolio-layer {
+    top: 5px;
+    opacity: 1;
+
+}
+
+.Portfolio .inner .Portfolio-layer h3 {
+    padding-bottom: 50px;
+    transition:  padding var(--transition-time);
+}
+
+.Portfolio .inner:hover .Portfolio-layer h3 {
+    padding-bottom: 5px;
+
+}
+
+.nav-pills .nav-link::after {
+    position: relative;
+}
+
+.nav-pills .nav-link::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 15%;
+    background-color: black;
+    width: 0%;
+    height: 2px;
+    transition: width var(--transition-time);
+}
+
+.nav-pills .nav-link.active::after {
+    width: 70%;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: black;
+    background-color: transparent ;
+}
+
+.nav-link:focus, .nav-link:hover {
+    color: black;
+}
+
+/* End - Portfolio */
+/* Testimonials */
+.carousel-indicators [data-bs-target] {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    padding: 0;
+    background-color: #869791;
+    position: relative;
+    top: 50px;
+}
+
+
+/* End - Testimonials */
+/*  */
+/* End -  */
+/* OurTeam */
+.half .half-layer {
+    background-color: black;
+    transition: background-color var(--transition-time) , border var(--transition-time);
+}
+.half .half-layer:hover {
+    background-color: white;
+    border: 1px solid black;
+}
+.half .half-layer i {
+    color: white;
+    transition: color var(--transition-time);
+}
+.half .half-layer:hover i {
+    color: black;
+}
+.half .header-links {
+    position: absolute;
+    top: 5px;
+    bottom: 5px;
+    left: 5px;
+    right: 5px;
+    background-color: rgba(255, 255, 255, 0.950);
+    opacity: 0;
+}
+
+.header-icon-50 {
+    width: 40px;
+    height: 40px;
+}
+.header-icon-50 a i {
+font-size: 16px;
+}
+
+.bg-layer{
+    background-color: #333;
+}
+
+
+.ourteam .inner img {
+    transition:  transform var(--transition-time);
+}
+
+.ourteam .inner:hover img {
+    transform: scale(1.2);
+}
+
+.ourteam .inner .header-links {
+    transform: scale(0.5);
+    transform: rotatey(180deg);
+    transition:  transform var(--transition-time),opacity var(--transition-time) ;
+}
+
+.ourteam .inner:hover .header-links {
+    transform: rotatey(0deg);
+    transform: scale(1);
+    opacity: 1;
+}
+
+/* End - OurTeam */
+/* ContactUs */
+
+
+/* End - ContactUs */
+/* Form */
+.form-control:focus {
+    color: var(--bs-body-color);
+    background-color: var(--bs-body-bg);
+    border-color: transparent;
+    outline: 0;
+    box-shadow: none;
+}
+
+/* End - Form */
+/* footer */
+footer div p {
+    color: #748182;
+}
+
+/* End - footer */
+
+
+@media screen and (max-width:991px) {
+    link::after {
+        content: "";
+        position: absolute;
+        height: 0px;
+        width: 20%;
+        background-color: black;
+        bottom: 0;
+        left: 40%;
+    }
+    .navbar-nav .nav-link.active::after {
+        height: 2px;
+        width: 10%;
+        background-color: black;
+        bottom: 0;
+        left: 45%;
+    }
+    
+}
+
+
+
